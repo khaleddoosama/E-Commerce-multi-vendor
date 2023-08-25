@@ -29,8 +29,8 @@ View the live site: http://multi-vendor-ecommerce-3912c1b86b75.herokuapp.com/
 
 Clone the repo and cd into it
 - Run `git clone https://github.com/khaleddoosama/E-Commerce-multi-vendor.git` 
-- Run `cd E-Commerce-multi-vendor` 
-Copy .env.example file to .env and edit database credentials  
+- Run `cd E-Commerce-multi-vendor` to enter the project
+- Copy .env.example file to .env and edit database credentials  
 - Run `composer install`
 - Run `php artisan key:generate`
 - Run `php artisan mi:f --seed` to run migrations and seed the database

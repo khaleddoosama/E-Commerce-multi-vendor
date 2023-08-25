@@ -14,7 +14,7 @@
                 </nav>
             </div>
             <div class="ms-auto">
-                @can('Slider.add')
+                @can('slider.add')
                     <div class="btn-group">
                         <a href="{{ route('add.slider') }}" class="btn btn-primary">Add Slider</a>
                     </div>
@@ -47,10 +47,10 @@
                                     </td>
 
                                     <td>
-                                        @can('Slider.edit')
+                                        @can('slider.edit')
                                             <a href="{{ route('edit.slider', $item->id) }}" class="btn btn-info">Edit</a>
                                         @endcan
-                                        @can('Slider.delete')
+                                        @can('slider.delete')
                                             <a href="{{ route('delete.slider', $item->id) }}" class="btn btn-danger"
                                                 id="delete">Delete</a>
                                         @endcan

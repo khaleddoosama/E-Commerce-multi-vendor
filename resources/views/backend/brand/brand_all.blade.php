@@ -14,7 +14,7 @@
                 </nav>
             </div>
             <div class="ms-auto">
-                @can('Brand.add')
+                @can('brand.add')
                     <div class="btn-group">
                         <a href="{{ route('add.brand') }}" class="btn btn-primary">Add Brand</a>
                     </div>
@@ -44,10 +44,10 @@
                                     <td> <img src="{{ asset($item->brand_image) }}" style="width: 70px; height:40px;"> </td>
 
                                     <td>
-                                        @can('Brand.edit')
+                                        @can('brand.edit')
                                             <a href="{{ route('edit.brand', $item->id) }}" class="btn btn-info">Edit</a>
                                         @endcan
-                                        @can('Brand.delete')
+                                        @can('brand.delete')
                                             <a href="{{ route('delete.brand', $item->id) }}" class="btn btn-danger"
                                                 id="delete">Delete</a>
                                         @endcan

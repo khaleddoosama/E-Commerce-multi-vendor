@@ -20,9 +20,13 @@ View the live site: http://multi-vendor-ecommerce-3912c1b86b75.herokuapp.com/
 - Blog/CMS - News and articles can be published to the site.
 - SEO optimization - Clean URLs, meta tags, sitemaps etc. for search engine visibility.
 - Customer accounts - Users can view order history, save billing/shipping details etc.
-- API support - JSON APIs allow integrating with mobile apps, other systems.
-- Caching - Redis, Memcached to speed up database queries and page loads.
-- Queues - generate PDFs etc. to improve response times.
+- Advance Order Tracking System - Track orders with shipping provider to display up-to-date status.
+- Stock Management System - Manage product inventory/stock levels.
+- User Role Management - Admins can manage staff accounts with specific roles.
+- Product Return Order - Customers can return orders for refunds.
+- Site Setting Option - Change site settings from admin like name, logo etc.
+- Site SEO Option - Dynamic meta tags, custom URLs, rich snippets etc.
+- Generate Order Invoice in PDF - Download invoices as PDFs.
 - Deployments - Configured for fast and easy deploys on servers like AWS, DigitalOcean etc.
 
 ## Installation

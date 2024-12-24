@@ -14,7 +14,7 @@
                 </nav>
             </div>
             <div class="ms-auto">
-                @can('SubCategory.add')
+                @can('subcategory.add')
                     <div class="btn-group">
                         <a href="{{ route('add.subcategory') }}" class="btn btn-primary">Add SubCategory</a>
                     </div>
@@ -44,10 +44,10 @@
                                     <td> {{ $item->subcategory_name }} </td>
 
                                     <td>
-                                        @can('Subcategory.edit')
+                                        @can('subcategory.edit')
                                             <a href="{{ route('edit.subcategory', $item->id) }}" class="btn btn-info">Edit</a>
                                         @endcan
-										@can('Subcategory.delete')
+										@can('subcategory.delete')
 											<a href="{{ route('delete.subcategory', $item->id) }}" class="btn btn-danger"
 												id="delete">Delete</a>
 										@endcan

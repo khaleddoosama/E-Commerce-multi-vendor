@@ -2,9 +2,11 @@
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 
 define('LARAVEL_START', microtime(true));
 
+// URL::forceScheme('https');
 /*
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
@@ -53,3 +55,4 @@ $response = $kernel->handle(
 )->send();
 
 $kernel->terminate($request, $response);
+

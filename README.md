@@ -1,64 +1,79 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Laravel Ecommerce Website
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This project is a multi-vendor ecommerce website built with Laravel 9.
 
-## About Laravel
+View the live site: http://multi-vendor-ecommerce-3912c1b86b75.herokuapp.com/
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Vendor accounts - Sellers can register and manage products
+- Product catalog - Browse and search products by category 
+- Shopping cart - Persistently add items across sessions
+- Checkout process - Enter shipping/billing, apply discounts, payment
+- Order management - Admins can view and manage orders
+- Reviews and ratings - Customers can review purchased products
+- Coupon discounts - Create limited time coupons
+- Tax and shipping - Calculate taxes and shipping rates automatically
+- Admin dashboard - View sales, products, reviews, customers, etc.  
+- Advanced shipping options - Calculate shipping rates based on order weight, dimensions etc.
+- Payment processing - Integrate payment gateways like Stripe.
+- Email notifications - New order emails, invoice emails, marketing emails etc.
+- Blog/CMS - News and articles can be published to the site.
+- SEO optimization - Clean URLs, meta tags, sitemaps etc. for search engine visibility.
+- Customer accounts - Users can view order history, save billing/shipping details etc.
+- Advance Order Tracking System - Track orders with shipping provider to display up-to-date status.
+- Stock Management System - Manage product inventory/stock levels.
+- User Role Management - Admins can manage staff accounts with specific roles.
+- Product Return Order - Customers can return orders for refunds.
+- Site Setting Option - Change site settings from admin like name, logo etc.
+- Site SEO Option - Dynamic meta tags, custom URLs, rich snippets etc.
+- Generate Order Invoice in PDF - Download invoices as PDFs.
+- Deployments - Configured for fast and easy deploys on servers like AWS, DigitalOcean etc.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Installation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Clone the repo and cd into it
+- Run `git clone https://github.com/khaleddoosama/E-Commerce-multi-vendor.git` 
+- Run `cd E-Commerce-multi-vendor` to enter the project
+- Copy .env.example file to .env and edit database credentials  
+- Run `composer install`
+- Run `php artisan key:generate`
+- Run `php artisan mi:f --seed` to run migrations and seed the database
+- Run `php artisan serve` to start the app on http://localhost:8000
+- Run `npm install` to install dependencies
+- Run `npm run dev` to compile assets
 
-## Learning Laravel
+## Usage
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Admin Access
+Visit http://localhost:8000/admin/login
+Email: admin@gmail.com
+Password: 111
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Vendor Access  
+Visit http://localhost:8000/vendor/login
+Email: vendor@gamil.com
+Password: 111
 
-## Laravel Sponsors
+Please check the seeders folder under database for default logins
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Security
 
-### Premium Partners
+- Cross-site scripting (XSS) protection
+- Form and JSON input validation
+- Encrypted cookies
+- Timestamp comparison to prevent token replay attacks
+- Password hash encryption
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Customization
+
+- Edit config files to suit your settings and preferences
+- Design/CSS files located in public/css/
+- Templates located in resources/views/
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Pull requests are welcome. Please see CONTRIBUTING.md for guidelines.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the MIT license.
